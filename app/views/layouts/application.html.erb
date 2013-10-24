@@ -7,6 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<form name="api-select">
+<input type="radio" class="star" name="." value="1" width="10px"/>
+<input type="radio" class="star" name="." value="2"/>
+<input type="radio" class="star" name="." value="3"/>
+<input type="radio" class="star" name="." value="4"/>
+<input type="radio" class="star" name="." value="5"/>
+<input type="button" value="Rate &raquo;" onClick="mostrarvalores();"/>
+
+<span></span>
+ </form>
+
+ <p><tt id="results"></tt></p>
 
 <%= yield %>
 
