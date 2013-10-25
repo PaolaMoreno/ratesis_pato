@@ -1,6 +1,8 @@
 Sr2::Application.routes.draw do
   get "rating/index"
+  get "photos/show" => 'photos#show'
   get 'rating/show' => 'rating#show', :as => :show
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
