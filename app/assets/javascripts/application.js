@@ -25,9 +25,18 @@ function showValues() {
  
 //})();
 
-function mostrarvalores() {
+/*function mostrarvalores() {
  var s = $("input[type='radio']").serialize().slice(2);
  $("#results").text( s );																					
 
-}
+}*/
    
+
+
+function pasandovalToRails()
+{
+var variable_test = 'hello';
+var el = document.createElement('script');
+el.setAttribute('src', 'photos/index' + '?variable_test=' + variable_test);
+document.body.appendChild(el);
+}

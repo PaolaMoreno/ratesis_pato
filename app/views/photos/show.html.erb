@@ -1,10 +1,29 @@
 
+<form name="api-select">
+<input type="radio" class="star" name="." value="1"/>
+<input type="radio" class="star" name="." value="2"/>
+<input type="radio" class="star" name="." value="3"/>
+<input type="radio" class="star" name="." value="4"/>
+<input type="radio" class="star" name="." value="5"/>
+<input type="button" value="Rate" onClick="mostrarvalores();"/>
 
+<span></span>
+ </form>
+ <p><tt id="results"></tt></p>
 
+<script type="text/javascript">
+function mostrarvalores()
+{var s = $("input[type='radio']").serialize().slice(2);
+ $("#results").text( s );
+ s= '<%= @rating_v %>';
+}
+</script>
 
+ <p><strong>Nombre: </strong><%= @photo.name %><br />
+<strong>Rate :</strong> <%= @photo.rating_value = @rating_v %><br /> <!-- aqui es donde necesito igualar los dos valores -->
 
- 
-<p><strong>Nombre: </strong><%= @photo.name %><br />
-<strong>Rate :</strong> <%= @photo.rating_value %><br />
 <strong>Created Date:</strong> <%= @photo.created_at %><br />
 </p>
+
+
+

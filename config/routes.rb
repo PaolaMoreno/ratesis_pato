@@ -1,6 +1,7 @@
 Sr2::Application.routes.draw do
   get "rating/index"
   get "photos/show" => 'photos#show'
+  get "photos/index" => 'photos#index'
   get 'rating/show' => 'rating#show', :as => :show
 
 

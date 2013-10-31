@@ -1,0 +1,11 @@
+
+ 
+
+<h1>todas las foticos</h1>
+<ul id="photos_list">
+<% @photo.each do |c| %>
+<li><%= link_to c.name, :action => 'show', :id => c.id %>
+
+<% end %>
+</ul>
+
